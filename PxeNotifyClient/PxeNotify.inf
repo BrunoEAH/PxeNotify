@@ -1,0 +1,32 @@
+[Defines]
+  INF_VERSION                    = 0x00010005
+  BASE_NAME                      = PxeNotify
+  FILE_GUID                      = 12345678-1234-1234-1234-1234567890ab
+  MODULE_TYPE                    = UEFI_APPLICATION
+  VERSION_STRING                 = 1.0
+  ENTRY_POINT                    = ShellAppMain
+
+[Sources]
+  PxeNotify.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  MdeModulePkg/MdeModulePkg.dec
+
+[Protocols]
+  gEfiHttpProtocolGuid
+  gEfiHttpServiceBindingProtocolGuid  
+  gEfiSimpleNetworkProtocolGuid
+
+[LibraryClasses]
+  UefiLib
+  UefiBootServicesTableLib
+  DebugLib
+  BaseMemoryLib
+  MemoryAllocationLib
+  PrintLib
+  UefiApplicationEntryPoint
+  
+  
+  
+  
