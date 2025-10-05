@@ -4,7 +4,7 @@
   FILE_GUID                      = 12345678-1234-1234-1234-1234567890ab
   MODULE_TYPE                    = UEFI_APPLICATION
   VERSION_STRING                 = 1.0
-  ENTRY_POINT                    = ShellAppMain
+  ENTRY_POINT                    = UefiMain
 
 [Sources]
   PxeNotify.c
